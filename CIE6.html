@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechFest 2025 Registration</title>
+<style>
+	body {
+		font-family: Arial, sans-serif;
+		background: #f0f4f8;
+		margin: 0;
+		padding: 0;
+	}
+	.container {
+		background: #fff;
+		width: 90%;
+		max-width: 500px;
+		margin: 40px auto;
+		padding: 20px;
+		border-radius: 8px;
+		box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	}
+	h1, h3 {
+		text-align: center;
+		margin: 10px 0;
+	}
+	form {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+	label {
+		font-weight: bold;
+	}
+	input, select, textarea {
+		padding: 8px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		font-size: 14px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+	textarea { resize: vertical; }
+	.options {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+	.buttons {
+		text-align: center;
+		margin-top: 10px;
+	}
+	input[type="submit"], input[type="reset"] {
+		padding: 10px 20px;
+		border: none;
+		background: #007bff;
+		color: white;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+	input[type="reset"] {
+		background: #6c757d;
+	}
+	input[type="submit"]:hover {
+		background: #0056b3;
+	}
+	input[type="reset"]:hover {
+		background: #5a6268;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1>TechFest 2025</h1>
+		<h3>Registration Form</h3>
+		<form action="#" method="post">
+			<label>Full Name</label>
+			<input type="text" name="fullname" required>
+
+			<label>USN</label>
+			<input type="text" name="usn" required>
+
+			<label>Section</label>
+			<input type="text" name="section" required>
+
+			<label>Year of Study</label>
+			<select name="year" required>
+				<option value="">Select Year</option>
+				<option>1st</option>
+				<option>2nd</option>
+				<option>3rd</option>
+				<option>4th</option>
+			</select>
+
+			<label>Email</label>
+			<input type="email" name="email" required>
+
+			<label>Phone Number</label>
+			<input type="tel" name="phone" required>
+
+			<label>Gender</label>
+			<div class="options">
+				<label><input type="radio" name="gender" value="male"> Male</label>
+				<label><input type="radio" name="gender" value="female"> Female</label>
+				<label><input type="radio" name="gender" value="other"> Other</label>
+			</div>
+
+			<label>College Name</label>
+			<input type="text" name="college" required>
+
+			<label>Department</label>
+			<select name="department" required>
+				<option value="">Select Department</option>
+				<option>Computer Science</option>
+				<option>Electronics</option>
+				<option>Mechanical</option>
+				<option>Civil</option>
+				<option>IT</option>
+			</select>
+
+			<label>Events Interested</label>
+			<div class="options">
+				<label><input type="checkbox" name="events" value="coding"> Coding</label>
+				<label><input type="checkbox" name="events" value="quiz"> Quiz</label>
+				<label><input type="checkbox" name="events" value="presentation"> Presentation</label>
+				<label><input type="checkbox" name="events" value="gaming"> Gaming</label>
+			</div>
+
+			<label>Address</label>
+			<textarea name="address"></textarea>
+
+			<div class="buttons">
+				<input type="submit" value="Register">
+				<input type="reset" value="Reset">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
